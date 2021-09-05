@@ -6,6 +6,7 @@ var soap = require('soap');
 var bodyParser = require('body-parser')
 var xml = require('fs').readFileSync('myservice.wsdl', 'utf8');
 //http server example
+
 var server = http.createServer(function(request,response) {
     response.end('404: Not Found: ' + request.url);
 });
